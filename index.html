@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A basic tutorial for HTML and CSS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS Basics</title>
+    <style>
+      html {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        margin: 0px;
+      }
+      video {
+        width: 400px;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      figure {
+        margin: 0; /* Removes the default margin */
+      }
+
+      table,
+      td,
+      th {
+        border: 1px solid gray;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML and CSS Basics</h1>
+    </header>
+    <main>
+      <section id="html-info">
+        <h2 id="html-header">HTML</h2>
+        <!-- Introduction to HTML and its role in web development -->
+        <p class="content-paragraph">
+          HTML, or HyperText Markup Language, is the standard markup language
+          used to create web pages. A fundamental building block of web
+          development, HTML forms the structural foundation of all websites. It
+          allows you to format and organize your content, essentially
+          instructing web browsers on how to display text, images, forms, and
+          other elements on a page.
+        </p>
+
+        <!-- Explanation of HTML elements and tags -->
+        <p class="content-paragraph">
+          An HTML document contains a series of elements, which are used to
+          create different parts of a web page's content. Elements are denoted
+          by tags, written using angle brackets. Tags usually come in pairs,
+          comprising an opening tag and a closing tag, and they tell the browser
+          how to interpret the content between them. For instance, the
+          &lt;h1&gt; tag represents a top-level heading, similar to what you
+          might use for the title of a page, while the &lt;p&gt; tag is used for
+          paragraphs.
+        </p>
+
+        <!-- Discussing multimedia elements and links in HTML -->
+        <p class="content-paragraph">
+          Beyond text content, HTML also supports multimedia elements, enabling
+          the inclusion of images, videos, and audio files within a web page. By
+          utilizing links, HTML can connect different pages within a website or
+          link to external sites. Forms and input elements are another crucial
+          component, allowing users to interact with web pages through data
+          entry, selections, and various other interactive features.
+        </p>
+
+        <!-- Integration of HTML with CSS and JavaScript -->
+        <p class="content-paragraph">
+          While HTML focuses on the structure and meaning of web content, it is
+          typically used in conjunction with CSS (Cascading Style Sheets) and
+          JavaScript to design visually engaging layouts and add interactive
+          functionalities. Understanding HTML is the first step in the exciting
+          journey of web development, providing the tools to convey content and
+          information in the digital world effectively.
+        </p>
+        <section id="hyperlinks-info">
+          <h3 id="hyperlinks-header">Understanding Hyperlinks</h3>
+          <p class="content-paragraph">
+            Hyperlinks, defined with the tag &lt;a&gt;, are one of the most
+            fundamental aspects of the web. These are used to navigate from one
+            document to another, thereby creating the interconnectedness that we
+            associate with the internet. The "hyper" in "Hypertext Markup
+            Language" refers to the ability of hyperlinks to navigate between
+            online resources quickly. Whether it's linking parts of your webpage
+            to other sections, different pages, or entirely different websites,
+            initiating downloads, or opening emails, hyperlinks are versatile
+            tools in web development.
+          </p>
+          <h4 id="hyperlinks-types">Types of Hyperlinks</h4>
+          <dl id="hyperlinks-list_of_types">
+            <dt>Internal Links</dt>
+            <dd>
+              - These links navigate to different pages within the same website.
+              For example, an "About" page: <a href="about.html">About Us</a>.
+            </dd>
+            <dt>External Links</dt>
+            <dd>
+              - These are links that take you to a different website. They
+              should be used with the attribute target="_blank" to open the new
+              page in a separate tab. For instance, linking to Google:
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google
+              </a>
+            </dd>
+            <dt>Download Links</dt>
+            <dd>
+              - These links prompt a file download when clicked. Here's an
+              example where a user can download an image:
+              <a href="images/wauzi.jpg" download>Download Cute Doggie</a>.
+            </dd>
+            <dt>Email Links</dt>
+            <dd>
+              - Clicking these links opens the user's default mail program to
+              send an email. Here's an example of an email link:
+              <a href="mailto:fabian.schurtenberger@gmail.com">Email Me</a>.
+            </dd>
+            <dt>Anchor Links</dt>
+            <dd>
+              - These links take you to specific sections within the current
+              page. They're handy for long pages. For example, a link that takes
+              you back to the top of this page:
+              <a href="#">Back to Top</a> or to a specific section:
+              <a href="#css">Jump to CSS Section</a>.
+            </dd>
+          </dl>
+        </section>
+        <section id="image-info">
+          <h3 id="image-header">Understanding Images</h3>
+          <p class="content-paragraph">
+            The 'img' tag embeds an image into the web page. It is a
+            self-closing tag, meaning it doesn't need a closing tag. The 'src'
+            attribute specifies the URL of the image, while the 'alt' attribute
+            provides alternative text for the image if it cannot be displayed,
+            which is helpful for accessibility.
+          </p>
+          <figure id="image-figure">
+            <h4 id="image-example">The Gorge</h4>
+            <img
+              src="images/schlucht.jpg"
+              alt="A gorge surrounded by a green landscape."
+            />
+            <figcaption>A picturesque view of a gorge.</figcaption>
+          </figure>
+        </section>
+        <section id="multimedia-info">
+          <h3 id="multimedia-header">Understanding Video and Audio</h3>
+          <!-- Introduction to multimedia elements in web design -->
+          <p class="content-paragraph">
+            In modern web design, multimedia elements are crucial for engaging
+            interactive experiences. HTML provides specific elements for
+            embedding rich media, including video and audio, known respectively
+            as the &lt;video&gt; and &lt;audio&gt; tags. These elements allow
+            you to include video and audio content directly into your web pages,
+            making them accessible to users without requiring third-party
+            plugins or downloads.
+          </p>
+
+          <!-- Overview and purpose of the <video> tag -->
+          <p class="content-paragraph">
+            The &lt;video&gt; element is used to embed video files on a web
+            page, offering common controls such as play, pause, and volume
+            straight out of the box. It can contain one or several
+            &lt;source&gt; elements, allowing specification of alternative video
+            files which the browser may choose from, based on its capabilities
+            or preferences. The browser will use the first recognized format.
+          </p>
+
+          <!-- Overview and purpose of the <audio> tag -->
+          <p class="content-paragraph">
+            Similarly, the &lt;audio&gt; element embeds audio content, providing
+            user controls for playback. As with the &lt;video&gt; tag, you can
+            use the &lt;source&gt; element to link to the audio files, and the
+            browser will select the most appropriate file format to play. It's
+            important to provide widely-supported formats to maximize
+            accessibility and compatibility.
+          </p>
+
+          <!-- Attributes and additional features of <video> and <audio> tags -->
+          <p class="content-paragraph">
+            Both elements support a variety of attributes, controlling aspects
+            such as autoplay, loop, volume, and preloading information. They can
+            also be styled and controlled using JavaScript, allowing for more
+            complex interactions and customization beyond the standard browser
+            controls. Additionally, for accessibility and user clarity, you can
+            use the &lt;track&gt; element to specify subtitles or provide other
+            timed text tracks (like captions or descriptions) for video content.
+          </p>
+
+          <!-- Considerations and best practices when using multimedia elements -->
+          <p class="content-paragraph">
+            When using these multimedia elements, always consider the user's
+            experience, including aspects like download time and data
+            consumption. It's also good practice to include fallback content,
+            specified within the &lt;video&gt; or &lt;audio&gt; tags, for
+            browsers that don't support these elements. This ensures that your
+            message is still conveyed even if the multimedia content cannot be
+            rendered.
+          </p>
+          These comments provide a brief summary of each paragraph's main focus,
+          helping developers quickly understand the content's structure and
+          purpose.
+
+          <figure id="video-figure">
+            <h4 id="video-header">The Soccer Field</h4>
+            <video controls>
+              <source src="Video/stadium.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Eagle view of the football fields.</figcaption>
+          </figure>
+          <figure id="audio-figure">
+            <h4 id="audio-header">The Chill Sound</h4>
+            <audio controls>
+              <source src="sounds/Mit-Rich_-_Chill_Trap.mp3" type="audio/mp3" />
+            </audio>
+            <figcaption>Relaxing music for the evening.</figcaption>
+          </figure>
+        </section>
+        <section id="list-info">
+          <h3 id="list-header">Understanding Lists</h3>
+          <!-- Overview of list types and their significance in web development. -->
+          <p class="content-paragraph">
+            Lists in web development provide a structured way to group a set of
+            related items in ordered or unordered terms. They're crucial in
+            organizing content, from product features to navigation menus. This
+            guide delves into the three primary types of lists in HTML:
+            unordered, ordered, and description lists. Each type is discussed in
+            detail below.
+          </p>
+          <section id="unorderd_list-info">
+            <h4 id="unorderd_list-header">Unordered Lists</h4>
+            <!-- Describes the nature and usage of unordered lists. -->
+            <p class="content-paragraph">
+              Unordered lists are used when the order of the list items does not
+              matter. These lists are often used for bullet points or any
+              information that needs to be itemized without any particular
+              sequence. The list items in unordered lists are typically
+              displayed with a bullet point.
+            </p>
+            <ul id="unorderd_list-list">
+              <li>Socks</li>
+              <li>Raincoat</li>
+              <li>
+                Vanity Bag
+                <ul>
+                  <li>Toothbrush</li>
+                  <li>Soap</li>
+                  <li>Shaving Foam</li>
+                </ul>
+              </li>
+              <li>Good Shoes</li>
+            </ul>
+          </section>
+          <section id="ordered_list-info">
+            <h4 id="ordered_list-header">Ordered Lists</h4>
+            <!-- Explains ordered lists and their significance. -->
+            <p class="content-paragraph">
+              Ordered lists are used when the sequence of the list items is
+              crucial. Each item in an ordered list is typically displayed with
+              a number or letter, which indicates its place in the sequence.
+              These lists are especially helpful in scenarios like step-by-step
+              instructions or ranking.
+            </p>
+            <ol id="ordered_list-list">
+              <li>Preheat the oven.</li>
+              <li>Place the ingredients on the crust.</li>
+              <li>Put the pizza in the oven for 20min</li>
+            </ol>
+          </section>
+          <section id="description_list-info">
+            <h4 id="description_list-header">Description Lists</h4>
+            <!-- Explains what description lists are and their utility. -->
+            <p class="content-paragraph">
+              Description lists, also known as definition lists, are a bit
+              different from the other two types. They pair terms with their
+              corresponding descriptions. These lists are useful in glossaries,
+              dictionaries, or any scenario where you need to pair a term with a
+              brief explanation.
+            </p>
+            <dl id="description_list-list">
+              <dt>HTML</dt>
+              <dd>HyperText Markup Language</dd>
+              <dt>CSS</dt>
+              <dd>Cascading Style Sheet</dd>
+            </dl>
+          </section>
+          <section id="tables-info">
+            <h3 id="tables-header">Understanding Tables</h3>
+            <!-- This paragraph provides an introduction to tables in HTML, their significance, and uses. -->
+            <p class="content-paragraph">
+              In web development, tables are a structured way to display data in
+              rows and columns. They are especially useful for presenting
+              numerical data, comparing information, or showing relationships.
+              HTML tables consist of the &lt;table&gt; element and can have a
+              combination of &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt;,
+              which represent the table's header, body, and footer,
+              respectively. The rows are defined using the &lt;tr&gt; element,
+              while the &lt;th&gt; and &lt;td&gt; elements represent header and
+              data cells.
+            </p>
+            <table id="tables-table">
+              <thead>
+                <tr>
+                  <th colspan="3">Persons</th>
+                </tr>
+                <tr>
+                  <th>Name</th>
+                  <!-- Changed from 'Fabian' to 'Name' to correctly label the column -->
+                  <th>Birthday</th>
+                  <th>Hair</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fabian</td>
+                  <td>15.08.1987</td>
+                  <td>Black</td>
+                </tr>
+                <tr>
+                  <td>Noemi</td>
+                  <td>08.08.1984</td>
+                  <td>Brown</td>
+                </tr>
+                <tr>
+                  <td>Manuela</td>
+                  <td>03.02.1982</td>
+                  <td>Brown short</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3">Total Persons Listed: 3</td>
+                </tr>
+              </tfoot>
+            </table>
+          </section>
+        </section>
+      </section>
+      <section id="css">
+        <h2>CSS</h2>
+        <!-- Introduction to CSS and its role in enhancing HTML designs -->
+        <p class="content-paragraph">
+          CSS, or Cascading Style Sheets, is a cornerstone technology used to
+          control the presentation of an HTML document, dramatically influencing
+          the visual experience of web pages. While HTML structures the content
+          and layout, CSS enhances this structure with color, typography,
+          spacing, and much more, allowing developers to create aesthetically
+          pleasing designs and consistent themes.
+        </p>
+
+        <!-- Highlighting the separation of content from design in CSS -->
+        <p class="content-paragraph">
+          One of the key features of CSS is the separation of content from
+          design. This separation allows for the styling of HTML elements across
+          multiple pages, ensuring consistency and making updates more
+          efficient. With CSS, you can alter the look of text, adjust the size
+          and positioning of images, and even create intricate interactive
+          features and animations. All these adjustments contribute to more
+          visually engaging web content.
+        </p>
+
+        <!-- Overview of CSS syntax, including rulesets, selectors, and declarations -->
+        <p class="content-paragraph">
+          CSS syntax is made of rulesets, with each ruleset consisting of
+          selectors and declarations. Selectors specify the HTML elements to be
+          styled, while the declarations, enclosed in curly braces, define how
+          those elements should be displayed. Each declaration is a
+          property-value pair, defining one particular aspect of the selected
+          elements' appearance.
+        </p>
+
+        <!-- Discussing advanced CSS features for responsive layouts and animations -->
+        <p class="content-paragraph">
+          In the modern web, CSS goes beyond just simple colors or fonts; it
+          enables the creation of responsive layouts that adjust and look great
+          on any device screen, from desktops to smartphones. Features like
+          Flexbox and Grid provide powerful tools for creating complex, flexible
+          layouts with ease. Additionally, CSS supports interactive animations
+          and transitions, enhancing the user experience without always needing
+          JavaScript.
+        </p>
+
+        <!-- Emphasizing the importance of learning CSS for web developers -->
+        <p class="content-paragraph">
+          Learning CSS is essential for anyone interested in web development.
+          Not only does it control how content is presented, but it also enables
+          the creation of immersive, interactive web experiences. Combined with
+          HTML and JavaScript, CSS is a fundamental skill in the toolbox of the
+          modern web developer.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
